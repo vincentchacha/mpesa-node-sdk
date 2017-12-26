@@ -1,0 +1,32 @@
+{
+  "name": "mpesa-node",
+  "version": "1.0.0",
+  "description": "Mpesa sdk for nodejs developers to be able to access the Safarico\u001b[3~\u001b[3~\u001b[3~com  mpesa services i.e paybill,lipa na mpesa and many more apis",
+  "main": "lib/mpesa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mpesa",
+    "safaricom",
+    "transaction",
+    "till",
+    "number",
+    "paybill",
+    "b2c",
+    "c2b",
+    "b2b",
+    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+    "\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Capi"
+  ],
+  "author": "Vincent Chacha Koech",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "requestify": "^0.2.5"
+  }
+}
