@@ -68,7 +68,7 @@ _You should be able to register  validation and confirmation urls where the call
    mpesa.accountBalance(request_options,function(data){
          console.log(data);
    })
-  ```
+    ```
 
 
 
@@ -91,7 +91,7 @@ _You should be able to register  validation and confirmation urls where the call
       };
    mpesa.transactionStatus(request_options,function(data){
           console.log(data);
-      })
+     })
    ```
 
 
