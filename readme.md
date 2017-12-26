@@ -19,8 +19,8 @@ You can Register for a developer account and get your client_id and secret at [S
  `MPESA_SECRET=[YOUR_API_CONSUMER_SECRET]`<br>
  `MPESA_MODE=[live or sandbox]`<br>
 
-**Callback Responses**
-NB_You should be able to register  validation and confirmation urls where the callback responses will be sent._
+**Callback Responses**<br>
+_You should be able to register  validation and confirmation urls where the callback responses will be sent._
 
 ## Usage
 
@@ -30,8 +30,8 @@ NB_You should be able to register  validation and confirmation urls where the ca
     var mpesa = require('mpesa-node-sdk');
     ```
 
-    **B2C Payment Request**
- This is used to initiate the transaction  from business to customers
+**B2C Payment Request**
+ * This is used to initiate the transaction  from business to customers
 
     ```js
     const request_options= {
@@ -50,59 +50,57 @@ NB_You should be able to register  validation and confirmation urls where the ca
       mpesa.b2c(request_options,function(data){
           console.log(data);
       })
-    ```
+      ```
 **Account Balance Request**
- 
-This is used to enquire the balance on an M-Pesa BuyGoods (Till Number)
+ * This is used to enquire the balance on an M-Pesa BuyGoods (Till Number)
 
-    ```js
-    const request_options={
-    "Initiator":" ",
-    "SecurityCredential":" ",
-    "CommandID":"AccountBalance",
-    "PartyA":" ",
-    "IdentifierType":"4",
-    "Remarks":" ",
-    "QueueTimeOutURL":"https://ip_address:port/timeout_url",
-    "ResultURL":"https://ip_address:port/result_url"
-};
-
-mpesa.accountBalance(request_options,function(data){
-    console.log(data);
-})
-    ```
+    ```javascript
+   const request_options={
+            "Initiator":" ",
+            "SecurityCredential":" ",
+            "CommandID":"AccountBalance",
+            "PartyA":" ",
+            "IdentifierType":"4",
+            "Remarks":" ",
+            "QueueTimeOutURL":"https://ip_address:port/timeout_url",
+            "ResultURL":"https://ip_address:port/result_url"
+           };
+   mpesa.accountBalance(request_options,function(data){
+         console.log(data);
+   })
+  ```
 
 
 
 **Transaction Status Request**
-This is used to check the status of transaction. 
 
-    ```js
-    const request_options={
-       "Initiator":" ",
-       "SecurityCredential":" ",
-       "CommandID":"TransactionStatusQuery",
-       "TransactionID":" ",
-       "PartyA":" ",
-       "IdentifierType":"1",
-       "ResultURL":"https://ip_address:port/result_url",
-       "QueueTimeOutURL":"https://ip_address:port/timeout_url",
-       "Remarks":" ",
-       "Occasion":" "
-   };
+ *This is used to check the status of transaction
 
+   ```javascript
+   const request_options={
+          "Initiator":" ",
+          "SecurityCredential":" ",
+          "CommandID":"TransactionStatusQuery",
+          "TransactionID":" ",
+          "PartyA":" ",
+          "IdentifierType":"1",
+          "ResultURL":"https://ip_address:port/result_url",
+          "QueueTimeOutURL":"https://ip_address:port/timeout_url",
+          "Remarks":" ",
+          "Occasion":" "
+      };
    mpesa.transactionStatus(request_options,function(data){
-       console.log(data);
-   })
-    ```
+          console.log(data);
+      })
+   ```
 
 
 **B2B Payment Request**
 
 This is used to transfer funds between two companies.
 
-    ```js
-    const request_options= {
+```js
+const request_options= {
         "Initiator": " ",
         "SecurityCredential": " ",
         "CommandID": " ",
@@ -116,11 +114,10 @@ This is used to transfer funds between two companies.
         "QueueTimeOutURL": "http://your_timeout_url",
         "ResultURL": "http://your_result_url"
       };
-    mpesa.b2b(request_options,function(data){
-
-              console.log(data);
-    })
-    ```
+mpesa.b2b(request_options,function(data){
+      console.log(data);
+ })
+```
 
 
 
@@ -130,7 +127,7 @@ This is used to transfer funds between two companies.
 
 This is used to Simulate transfer of funds between a customer and business.
 
-    ```js
+    ```javascript
     const request_options={
         "ShortCode":" ",
         "CommandID":"CustomerPayBillOnline",
@@ -147,7 +144,7 @@ This is used to Simulate transfer of funds between a customer and business.
 **Reversal**
  This is used to initiate a reversal request
 
-    ```js
+    ```javascript
     const request_options={
         "Initiator": "",
         "SecurityCredential": "",
@@ -172,7 +169,7 @@ This is used to Simulate transfer of funds between a customer and business.
 
 This is used to initiate online payment on behalf of a customer.
 
-    ```js
+    ```javascript
      const request_options={
          "BusinessShortCode": " ",
          "Password": " ",
@@ -197,7 +194,7 @@ This is used to initiate online payment on behalf of a customer.
 
  This is used to check the status of a Lipa Na M-Pesa Online Payment.
  
-    ```js
+    ```javascript
     const request_options={
         "BusinessShortCode": " " ,
         "Password": " ",
