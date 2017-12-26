@@ -12,9 +12,9 @@ npm install mpesa-node-sdk
 
  
  
-##Configuration
+## Configuration
  At your project root, create a .env file and in it set the MPESA_KEY,MPESA_SECRET and MPESA_MODE (i.e live or sandbox) and put the keys you received when registering your application from the safaricom portal.<br>
-You can Register for a developer account and get your client_id and secret at [Safaricom Developer Portal](http://developer.safaricom.co.ke). 
+You can Register for a developer account and get your client_id and secret at [Safaricom Developer Portal](http://developer.safaricom.co.ke). <br>
  `MPESA_KEY= [YOUR_API_CONSUMER_KEY]` <br>
  `MPESA_SECRET=[YOUR_API_CONSUMER_SECRET]`<br>
  `MPESA_MODE=[live or sandbox]`<br>
