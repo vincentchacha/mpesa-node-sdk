@@ -1,4 +1,4 @@
-# Mpesa Node Sdk
+# mpesa-node-sdk
 
 **Introduction**
 
