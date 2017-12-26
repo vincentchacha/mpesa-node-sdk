@@ -127,8 +127,8 @@ mpesa.b2b(request_options,function(data){
 
 This is used to Simulate transfer of funds between a customer and business.
 
-    ```javascript
-    const request_options={
+```javascript
+const request_options={
         "ShortCode":" ",
         "CommandID":"CustomerPayBillOnline",
         "Amount":" ",
@@ -136,10 +136,10 @@ This is used to Simulate transfer of funds between a customer and business.
         "BillRefNumber":" "
     };
 
-    mpesa.c2b(request_options,function(data){
+  mpesa.c2b(request_options,function(data){
         console.log(data);
     })
-    ```
+ ```
 
 **Reversal**
  This is used to initiate a reversal request
@@ -169,8 +169,8 @@ This is used to Simulate transfer of funds between a customer and business.
 
 This is used to initiate online payment on behalf of a customer.
 
-    ```javascript
-     const request_options={
+```javascript
+const request_options={
          "BusinessShortCode": " ",
          "Password": " ",
          "Timestamp": " ",
@@ -184,10 +184,10 @@ This is used to initiate online payment on behalf of a customer.
          "TransactionDesc": " "
      };
 
-     mpesa.STKPushSimulation(request_options,function(data){
+  mpesa.STKPushSimulation(request_options,function(data){
          console.log(data);
-     })
-    ```
+  })
+```
 
 
 **STK Push Status Query**
