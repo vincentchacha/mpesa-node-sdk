@@ -144,8 +144,8 @@ const request_options={
 **Reversal**
  This is used to initiate a reversal request
 
-    ```javascript
-    const request_options={
+```javascript
+const request_options={
         "Initiator": "",
         "SecurityCredential": "",
         "CommandID":"TransactionReversal",
@@ -162,7 +162,7 @@ const request_options={
     mpesa.reversal(request_options,function(data){
         console.log(data);
     })
-    ```
+```
 
 
 **STK Push Simulation**
@@ -194,8 +194,8 @@ const request_options={
 
  This is used to check the status of a Lipa Na M-Pesa Online Payment.
  
-    ```javascript
-    const request_options={
+```javascript
+const request_options={
         "BusinessShortCode": " " ,
         "Password": " ",
         "Timestamp": " ",
@@ -204,8 +204,8 @@ const request_options={
 
     mpesa.STKPushQuery(request_options,function(data){
         console.log(data);
-    })
-    ```
+  })
+```
 
 ## Reference
    [REST API Reference] (https://developer.safaricom.co.ke/docs)
