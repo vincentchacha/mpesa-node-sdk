@@ -1,4 +1,4 @@
-var mpesa = require('mpesa');
+var mpesa = require('mpesa-node-sdk');
 
 /**
  * Set the request options
